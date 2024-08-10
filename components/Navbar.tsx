@@ -32,7 +32,9 @@ const Navbar = ({ lastScrollY }: { lastScrollY: number }) => {
         ease: "easeOut",
       }}
       className={`${
-        lastScrollY > 80 ? `bg-white text-black` : `bg-primary text-white`
+        lastScrollY > 80
+          ? `bg-white text-black`
+          : `sm:bg-primary sm:text-white bg-white text-black`
       } w-full overflow-hidden h-fit md:sticky md:top-0 md:left-0 md:border-b md:border-gray-500/30 z-50`}
     >
       <div className="h-[80px] w-full flex items-center justify-between px-7 overflow-hidden md:px-16">
